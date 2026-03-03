@@ -143,3 +143,51 @@ html { scroll-behavior: smooth; }
   .stat-divider { display: none; }
   .stat-pill { width: 45%; margin-bottom: 1rem; }
 }
+
+
+/* ===== PORTFOLIO PREVIEW (homepage teaser) ===== */
+.portfolio-preview { padding: 6rem 0; background: #f4f6ff; text-align: center; }
+.portfolio-preview h2 { font-size: 2.2rem; font-weight: 900; color: #1a1a2e; margin-bottom: 0.5rem; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3rem; text-align: left; }
+.portfolio-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,0.08); border: 2px solid transparent; transition: transform 0.2s, border-color 0.2s; }
+.portfolio-card:hover { transform: translateY(-6px); border-color: #cddc39; }
+.portfolio-logo-wrap { background: #111; padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 120px; }
+.portfolio-logo { max-height: 70px; max-width: 200px; object-fit: contain; }
+.portfolio-logo-fallback { color: #cddc39; font-size: 1.8rem; font-weight: 900; letter-spacing: 3px; }
+.portfolio-card-body { padding: 1.8rem; }
+.portfolio-tag { display: inline-block; background: #cddc39; color: #1a1a2e; font-size: 0.75rem; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.8rem; }
+.portfolio-card-body h3 { font-size: 1.4rem; font-weight: 900; color: #1a1a2e; margin-bottom: 0.8rem; }
+.portfolio-card-body p { color: #555; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; }
+.portfolio-btn { font-size: 0.9rem; padding: 0.6rem 1.4rem; }
+
+/* ===== PORTFOLIO FULL PAGE ===== */
+.portfolio-full { padding: 5rem 0; background: #fff; }
+.portfolio-company-card { background: #f9fafb; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin-bottom: 3rem; border: 1px solid #e8eaf6; }
+.portfolio-company-header { display: flex; align-items: center; gap: 2.5rem; padding: 2.5rem; background: #1a1a2e; flex-wrap: wrap; }
+.portfolio-company-logo-wrap { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: center; min-width: 160px; min-height: 90px; }
+.portfolio-company-logo { max-height: 60px; max-width: 180px; object-fit: contain; }
+.portfolio-company-logo-text { color: #cddc39; font-size: 1.6rem; font-weight: 900; letter-spacing: 3px; }
+.portfolio-company-meta { flex: 1; }
+.portfolio-company-meta h2 { color: #fff; font-size: 2rem; font-weight: 900; margin-bottom: 0.3rem; }
+.portfolio-url { color: #cddc39; font-size: 0.95rem; font-weight: 600; text-decoration: none; }
+.portfolio-url:hover { text-decoration: underline; }
+.portfolio-company-body { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: 2.5rem; }
+.portfolio-company-desc h3, .portfolio-company-highlights h3 { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.portfolio-company-desc p { color: #555; font-size: 0.97rem; line-height: 1.8; margin-bottom: 1rem; }
+.portfolio-highlights-list { list-style: none; padding: 0; }
+.portfolio-highlights-list li { color: #444; font-size: 0.95rem; padding: 0.5rem 0; border-bottom: 1px solid #eee; line-height: 1.5; }
+.portfolio-highlights-list li:last-child { border-bottom: none; }
+.portfolio-company-images { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.portfolio-img { width: 100%; height: 220px; object-fit: cover; display: block; transition: opacity 0.2s; }
+.portfolio-img:hover { opacity: 0.85; }
+.portfolio-more { margin-top: 4rem; }
+.portfolio-more-inner { background: linear-gradient(135deg, #1a1a2e, #0f3460); border-radius: 16px; padding: 3.5rem; text-align: center; }
+.portfolio-more-inner h3 { color: #cddc39; font-size: 1.6rem; font-weight: 900; margin-bottom: 1rem; }
+.portfolio-more-inner p { color: #ccc; font-size: 1rem; line-height: 1.7; max-width: 580px; margin: 0 auto 2rem; }
+
+@media (max-width: 768px) {
+  .portfolio-company-body { grid-template-columns: 1fr; gap: 2rem; }
+  .portfolio-company-images { grid-template-columns: 1fr; }
+  .portfolio-img { height: 200px; }
+  .portfolio-company-header { flex-direction: column; align-items: flex-start; }
+}
