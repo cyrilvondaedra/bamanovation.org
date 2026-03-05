@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamanovation - Empowering Business Growth Together</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bamanovation - Empowering Business Growth Together. Strategic trade, commerce, and private equity solutions connecting businesses with global opportunities.">
+  <meta property="og:title" content="Bamanovation - Empowering Business Growth Together">
+  <meta property="og:description" content="Strategic trade, commerce, and private equity solutions for forward-thinking organisations.">
+  <meta property="og:type" content="website">
+  <title>Bamanovation - Empowering Business Growth Together</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><img src="bamanovation-logo.png" alt="Bamanovation" style="height:50px;"></a>
-      <ul class="nav-links">
+      <a href="index.html" class="nav-logo">
+        <img src="bamanovation-logo.png" alt="Bamanovation" style="height:50px;">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="index.html#mission">Our Mission</a></li>
         <li><a href="index.html#services">Services</a></li>
@@ -27,8 +36,11 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Empowering Business Growth Together</h1>
-      <p>Innovative solutions for trade and commerce success.</p>
-      <a href="index.html#mission" class="btn-primary">JOIN OUR NETWORK</a>
+      <p>Innovative solutions for trade, commerce, and private equity success across global markets.</p>
+      <div class="hero-btns">
+        <a href="index.html#services" class="btn-primary">EXPLORE SERVICES</a>
+        <a href="index.html#contact" class="btn-outline">GET IN TOUCH</a>
+      </div>
     </div>
   </section>
 
@@ -42,13 +54,25 @@
   <!-- STATS BAR -->
   <div class="stats-bar">
     <div class="stats-bar-inner">
-      <div class="stat-pill"><span class="stat-pill-num">500+</span><span class="stat-pill-label">Businesses Served</span></div>
+      <div class="stat-pill">
+        <span class="stat-pill-num" data-target="500">0</span><span class="stat-pill-num">+</span>
+        <span class="stat-pill-label">Businesses Served</span>
+      </div>
       <div class="stat-divider"></div>
-      <div class="stat-pill"><span class="stat-pill-num">40+</span><span class="stat-pill-label">Countries Reached</span></div>
+      <div class="stat-pill">
+        <span class="stat-pill-num" data-target="40">0</span><span class="stat-pill-num">+</span>
+        <span class="stat-pill-label">Countries Reached</span>
+      </div>
       <div class="stat-divider"></div>
-      <div class="stat-pill"><span class="stat-pill-num">$2B+</span><span class="stat-pill-label">Capital Facilitated</span></div>
+      <div class="stat-pill">
+        <span class="stat-pill-num">$2B+</span>
+        <span class="stat-pill-label">Capital Facilitated</span>
+      </div>
       <div class="stat-divider"></div>
-      <div class="stat-pill"><span class="stat-pill-num">15+</span><span class="stat-pill-label">Years Experience</span></div>
+      <div class="stat-pill">
+        <span class="stat-pill-num" data-target="15">0</span><span class="stat-pill-num">+</span>
+        <span class="stat-pill-label">Years Experience</span>
+      </div>
     </div>
   </div>
 
@@ -57,14 +81,14 @@
     <div class="container">
       <div class="mission-grid">
         <div class="mission-image">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Team collaboration">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Team collaboration" loading="lazy">
         </div>
         <div class="mission-text">
           <div class="section-accent"></div>
           <h2>Our Mission</h2>
           <p>At Bamanovation, we partner with forward-thinking organisations to unlock new markets, attract the right capital, and drive sustainable growth. From strategy to execution, we are the catalyst your business needs.</p>
           <div class="btn-group">
-            <a href="#" class="btn-primary">Learn More</a>
+            <a href="#services" class="btn-primary">Our Services</a>
             <a href="#contact" class="btn-outline">Contact Us</a>
           </div>
         </div>
@@ -104,13 +128,12 @@
     </div>
   </section>
 
-
   <!-- PORTFOLIO SECTION -->
   <section class="portfolio-preview" id="portfolio">
     <div class="container">
       <div class="section-accent" style="margin:0 auto 0.8rem;"></div>
       <h2>Our Portfolio</h2>
-      <p class="section-sub">Companies we own and operate — each a leader in its field.</p>
+      <p class="section-sub">Companies we own and operate &mdash; each a leader in its field.</p>
       <div class="portfolio-grid">
         <div class="portfolio-card">
           <div class="portfolio-logo-wrap">
@@ -173,7 +196,7 @@
             <input type="text" placeholder="Your Full Name" required>
             <input type="email" placeholder="Your Email Address *" required>
             <textarea placeholder="Tell us about your business and how we can help..." rows="5"></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -186,8 +209,8 @@
       <h3>Stay Ahead of the Market</h3>
       <p>Join our newsletter for the latest trade insights, market news, and growth opportunities.</p>
       <form class="subscribe-form">
-        <input type="email" placeholder="Email Address">
-        <button type="submit" class="btn-primary">Sign up</button>
+        <input type="email" placeholder="Email Address" required>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   </section>
@@ -195,9 +218,86 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Bamanovation - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">BAMANOVATION</div>
+          <p>Empowering Business Growth Together. Strategic trade, commerce, and private equity solutions for forward-thinking organisations worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#mission">Our Mission</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="private-equity.html">Private Equity</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="index.html#contact">Get In Touch</a></li>
+            <li><a href="mailto:oak@bamanovation.org">oak@bamanovation.org</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bamanovation &mdash; All Rights Reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        links.classList.remove('open');
+      });
+    });
+    const navbar = document.getElementById('navbar');
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      backToTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    function animateCounter(el, target, duration) {
+      let start = 0;
+      const step = target / (duration / 16);
+      const timer = setInterval(() => {
+        start += step;
+        if (start >= target) { el.textContent = target; clearInterval(timer); }
+        else el.textContent = Math.floor(start);
+      }, 16);
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          document.querySelectorAll('[data-target]').forEach(el => {
+            animateCounter(el, parseInt(el.dataset.target), 1500);
+          });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) observer.observe(statsBar);
+  </script>
 
 </body>
 </html>
