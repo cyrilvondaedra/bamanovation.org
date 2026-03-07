@@ -997,32 +997,32 @@ ul { list-style: none; }
     .portfolio-company-images { grid-template-columns: 1fr; }
     .portfolio-img { height: 200px; }
     .portfolio-company-header { flex-direction: column; align-items: flex-start; }
+}
 
-   /* ===== ACCORDION PORTFOLIO CARDS ===== */
-   .accordion-toggle {
-        cursor: pointer;
-        position: relative;
-        user-select: none;
-   }
-   .accordion-toggle:hover {
-        background: #16213e;
-   }
-   .accordion-arrow {
-        font-size: 1.8rem;
-        color: #cddc39;
-        margin-left: auto;
-        transition: transform 0.3s ease;
-        line-height: 1;
-   }
-   .accordion-arrow.rotated {
-        transform: rotate(180deg);
-   }
-   .accordion-body {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s ease;
-   }
-   .accordion-body.open {
-        max-height: 2000px;
-   }
+/* ===== ACCORDION PORTFOLIO CARDS ===== */
+.accordion-toggle {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.accordion-toggle:hover {
+  background: #16213e;
+}
+.accordion-arrow {
+  font-size: 1.8rem;
+  color: #cddc39;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+.accordion-arrow.rotated {
+  transform: rotate(180deg);
+}
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.accordion-body.open {
+  max-height: 2000px;
 }
