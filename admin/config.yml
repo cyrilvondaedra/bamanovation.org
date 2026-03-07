@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Companies"
+    files:
+      - label: "Portfolio Page"
+        name: "portfolio"
+        file: "portfolio.html"
+        fields:
+          - label: "Companies"
+            name: "companies"
+            widget: "list"
+            fields:
+              - { label: "Company Name", name: "name", widget: "string" }
+              - { label: "Tag (e.g. Food & Beverage)", name: "tag", widget: "string" }
+              - { label: "Website URL", name: "url", widget: "string" }
+              - { label: "Logo Text (if no image)", name: "logo_text", widget: "string" }
+              - { label: "About Description", name: "description", widget: "text" }
+              - label: "Highlights"
+                name: "highlights"
+                widget: "list"
+                field: { label: "Highlight", name: "highlight", widget: "string" }
