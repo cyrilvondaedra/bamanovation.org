@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bamanovation</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio - Bamanovation</title>
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo"><img src="bamanovation-logo.png" alt="Bamanovation" style="height:50px;"></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#mission">Our Mission</a></li>
-        <li><a href="index.html#services">Services</a></li>
-        <li><a href="private-equity.html">Private Equity</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="index.html#contact">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
+      <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="bamanovation-logo.png" alt="Bamanovation" style="height:50px;"></a>a>
+            <ul class="nav-links">
+                    <li><a href="index.html">Home</a>a></li>
+                  <li><a href="index.html#mission">Our Mission</a>a></li>
+                  <li><a href="index.html#services">Services</a>a></li>
+                  <li><a href="private-equity.html">Private Equity</a>a></li>
+                  <li><a href="portfolio.html" class="active">Portfolio</a>a></li>
+                  <li><a href="index.html#contact">Contact Us</a>a></li>
+            </ul>ul>
+      </div>div>
+  </nav>nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <h1>Our Portfolio</h1>
-    <p>We don't just advise — we build. These are the companies we own and operate, each a testament to our commitment to innovation and growth.</p>
-  </div>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>Our Portfolio</h1>
+  <p>We don't just advise — we build. These are the companies we own and operate, each a testament to our commitment to innovation and growth.</p>
+</div>div>
 
-  <!-- PORTFOLIO SECTION -->
-  <section class="portfolio-full">
-    <div class="container">
-
+<!-- PORTFOLIO SECTION -->
+<section class="portfolio-full">
+  <div class="container">
+  
+      <!-- BamBite -->
       <div class="portfolio-company-card">
-        <div class="portfolio-company-header">
-          <div class="portfolio-company-logo-wrap">
-            <img src="https://bambite.co/cdn/shop/files/BamBite_Logo.png?v=1749022840" alt="BamBite" class="portfolio-company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-            <div class="portfolio-company-logo-text" style="display:none;">BAMBITE</div>
-          </div>
-          <div class="portfolio-company-meta">
-            <span class="portfolio-tag">Food &amp; Beverage</span>
-            <h2>BamBite</h2>
-            <a href="https://bambite.co" target="_blank" rel="noopener" class="portfolio-url">bambite.co &#8599;</a>
-          </div>
-        </div>
-
-        <div class="portfolio-company-body">
-          <div class="portfolio-company-desc">
-            <h3>About BamBite</h3>
-            <p>BamBite is a premium culinary brand on a mission to connect generations, cultures, and experiences through the simple happiness of great food. Inspired by cuisines from across Asia, BamBite explores flavours, techniques, and stories beyond the familiar — with creativity and care.</p>
-            <p>What begins in Bam's world — his discoveries, his creativity, his joyful little recipes — is now being shared with the world. Every dish is an invitation to connect, to feel comfort, and to experience new flavours carried from his home to yours, wherever you are.</p>
-            <a href="https://bambite.co" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Visit BamBite &rarr;</a>
-          </div>
-          <div class="portfolio-company-highlights">
-            <h3>Highlights</h3>
-            <ul class="portfolio-highlights-list">
-              <li>&#127868; Premium Asian-inspired culinary brand</li>
-              <li>&#127758; Connecting cultures through authentic food</li>
-              <li>&#129309; Community membership programme</li>
-              <li>&#11088; Collaborations with iconic regional chefs</li>
-              <li>&#128241; Full e-commerce &amp; delivery platform</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="portfolio-company-images">
-          <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" alt="Asian cuisine" class="portfolio-img">
-          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Food presentation" class="portfolio-img">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Culinary art" class="portfolio-img">
-        </div>
-      </div>
-
+            <div class="portfolio-company-header accordion-toggle" onclick="toggleAccordion(this)">
+                    <div class="portfolio-company-logo-wrap">
+                              <img src="https://bambite.co/cdn/shop/files/BamBite_Logo.png?v=1749022840" alt="BamBite" class="portfolio-company-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                              <div class="portfolio-company-logo-text" style="display:none;">BAMBITE</div>div>
+                    </div>div>
+                    <div class="portfolio-company-meta">
+                              <span class="portfolio-tag">Food &amp; Beverage</span>span>
+                              <h2>BamBite</h2>
+                              <a href="https://bambite.co" target="_blank" rel="noopener" class="portfolio-url" onclick="event.stopPropagation()">bambite.co &#8599;</a>a>
+                    </div>div>
+                    <div class="accordion-arrow">&#8964;</div>div>
+            </div>div>
+            <div class="accordion-body">
+                    <div class="portfolio-company-body">
+                              <div class="portfolio-company-desc">
+                                          <h3>About BamBite</h3>
+                                          <p>BamBite is a premium culinary brand on a mission to connect generations, cultures, and experiences through the simple happiness of great food. Inspired by cuisines from across Asia, BamBite explores flavours, techniques, and stories beyond the familiar — with creativity and care.</p>
+                                          <p>What begins in Bam's world — his discoveries, his creativity, his joyful little recipes — is now being shared with the world. Every dish is an invitation to connect, to feel comfort, and to experience new flavours carried from his home to yours, wherever you are.</p>
+                                          <a href="https://bambite.co" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Visit BamBite &rarr;</a>a>
+                              </div>div>
+                              <div class="portfolio-company-highlights">
+                                          <h3>Highlights</h3>
+                                          <ul class="portfolio-highlights-list">
+                                                        <li>&#127868; Premium Asian-inspired culinary brand</li>
+                                                        <li>&#127758; Connecting cultures through authentic food</li>
+                                                        <li>&#129309; Community membership programme</li>
+                                                        <li>&#11088; Collaborations with iconic regional chefs</li>
+                                                        <li>&#128241; Full e-commerce &amp; delivery platform</li>
+                                          </ul>ul>
+                              </div>div>
+                    </div>div>
+                    <div class="portfolio-company-images">
+                              <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" alt="Asian cuisine" class="portfolio-img">
+                              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Food presentation" class="portfolio-img">
+                              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Culinary art" class="portfolio-img">
+                    </div>div>
+            </div>div>
+      </div>div>
+  
+      <!-- Myint Myint Khin -->
+      <div class="portfolio-company-card">
+            <div class="portfolio-company-header accordion-toggle" onclick="toggleAccordion(this)">
+                    <div class="portfolio-company-logo-wrap">
+                              <div class="portfolio-company-logo-text">MMK</div>div>
+                    </div>div>
+                    <div class="portfolio-company-meta">
+                              <span class="portfolio-tag">Food &amp; Beverage</span>span>
+                              <h2>Myint Myint Khin</h2>
+                              <a href="https://myintmyintkhin.com" target="_blank" rel="noopener" class="portfolio-url" onclick="event.stopPropagation()">myintmyintkhin.com &#8599;</a>a>
+                    </div>div>
+                    <div class="accordion-arrow">&#8964;</div>div>
+            </div>div>
+            <div class="accordion-body">
+                    <div class="portfolio-company-body">
+                              <div class="portfolio-company-desc">
+                                          <h3>About Myint Myint Khin</h3>
+                                          <p>Myint Myint Khin is a beloved Food &amp; Beverage brand with deep roots in authentic regional cuisine. The brand is committed to preserving traditional recipes while bringing them to a modern audience.</p>
+                                          <a href="https://myintmyintkhin.com" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block;margin-top:1.5rem;">Visit Myint Myint Khin &rarr;</a>a>
+                              </div>div>
+                              <div class="portfolio-company-highlights">
+                                          <h3>Highlights</h3>
+                                          <ul class="portfolio-highlights-list">
+                                                        <li>&#127869; Authentic regional cuisine brand</li>
+                                                        <li>&#127981; Strong heritage and tradition</li>
+                                                        <li>&#128200; Growing distribution network</li>
+                                          </ul>ul>
+                              </div>div>
+                    </div>div>
+            </div>div>
+      </div>div>
+  
       <!-- More companies CTA -->
       <div class="portfolio-more">
-        <div class="portfolio-more-inner">
-          <h3>Interested in Joining Our Portfolio?</h3>
-          <p>We actively invest in and acquire businesses with strong fundamentals and growth potential. If you have a business that aligns with our vision, we would love to hear from you.</p>
-          <a href="index.html#contact" class="btn-primary">Get In Touch</a>
-        </div>
-      </div>
+            <div class="portfolio-more-inner">
+                    <h3>Interested in Joining Our Portfolio?</h3>
+                    <p>We actively invest in and acquire businesses with strong fundamentals and growth potential. If you have a business that aligns with our vision, we would love to hear from you.</p>
+                    <a href="index.html#contact" class="btn-primary">Get In Touch</a>a>
+            </div>div>
+      </div>div>
+  
+  </div>div>
+</section>section>
 
-    </div>
-  </section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+      <p>&copy; 2026 Bamanovation - All Rights Reserved. | <a href="#">Privacy Policy</a>a></p>
+  </div>div>
+</footer>footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Bamanovation - All Rights Reserved. | <a href="#">Privacy Policy</a></p>
-    </div>
-  </footer>
+<script>
+    function toggleAccordion(header) {
+          var body = header.nextElementSibling;
+          var arrow = header.querySelector('.accordion-arrow');
+          var isOpen = body.classList.contains('open');
+          body.classList.toggle('open', !isOpen);
+          arrow.classList.toggle('rotated', !isOpen);
+    }
+</script>
 
 </body>
-</html>
+</html>html>
+</script></p></p></li></li></p></p></h1></li></li>
+</body></title>
+  </head>
